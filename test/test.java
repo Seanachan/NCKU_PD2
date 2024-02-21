@@ -1,8 +1,7 @@
 //with package: javac -d . MyPackage.java
 //execute: java MyPackage.ClassName
-import javax.swing.JOptionPane;
+// import javax.swing.JOptionPane;
 import java.util.Scanner;
-
 public class test{
     public static void main(String[] args){
         //GUI
@@ -13,7 +12,8 @@ public class test{
         // Scanner scanner = new Scanner(System.in);
 
         // scanner.close();
-        Int[][] arr = new Int[3][3];
-        
+        int[][] arr = new int[3][3];
+        arr[0][1]=2;
+        System.out.println("Hello world");
     }
 }
