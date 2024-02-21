@@ -1,7 +1,7 @@
 //with package: javac -d . MyPackage.java
 //execute: java MyPackage.ClassName
 // import javax.swing.JOptionPane;
-import java.util.Scanner;
+// import java.util.Scanner;
 public class test{
     public static void main(String[] args){
         //GUI
@@ -15,5 +15,6 @@ public class test{
         int[][] arr = new int[3][3];
         arr[0][1]=2;
         System.out.println("Hello world");
+        System.out.println("Sup man!");
     }
 }
