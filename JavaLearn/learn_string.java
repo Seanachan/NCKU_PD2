@@ -1,11 +1,10 @@
 package JavaLearn;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 @SuppressWarnings("unused")
-public class string {
+public class learn_string {
     public static void main(String[] args)throws IOException{
         String str = "Seanachan";//String is not basic data type
         // ->String str = new String("Seanachan")

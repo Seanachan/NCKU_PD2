@@ -2,7 +2,7 @@
 //execute: java MyPackage.ClassName
 // import javax.swing.JOptionPane;
 // import java.util.Scanner;
-public class test{
+public class temp{
     public static void main(String[] args){
         //GUI
         // String name = JOptionPane.showInputDialog("Enter your name");
