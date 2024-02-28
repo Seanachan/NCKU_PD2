@@ -1,4 +1,3 @@
-package JavaLearn;
 import java.util.Scanner;
 // import java.util.Arrays;
 // @SuppressWarnings("unused")
