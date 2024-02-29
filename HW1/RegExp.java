@@ -21,7 +21,7 @@ public class RegExp {
     }   
     private static boolean includeString(String str1,String str2,int l1,int l2){
         //str1 is longer
-        for(int i=0;i<l1-l2;i++){
+        for(int i=0;i<=l1-l2;i++){
             if(str2.equals(str1.substring(i,i+l2))) 
                 return true;
         }
@@ -29,7 +29,7 @@ public class RegExp {
     }
     private static boolean countString(String str1,String str2,int l1,int l2,int n){
         int cnt=0;
-        for(int i=0;i<l1-l2;i++){
+        for(int i=0;i<=l1-l2;i++){
             if(str2.equals(str1.substring(i,i+l2))) 
                 cnt++;
             if(cnt>=n)
@@ -53,7 +53,7 @@ public class RegExp {
             while(idx>=0){
                 b=0;
                 if(str.charAt(idx)=='b'){
-                    while(str.charAt(idx)=='b'){
+                    while(idx>=0&&str.charAt(idx)=='b'){
                         idx--;
                         b++;
                     }
@@ -62,6 +62,7 @@ public class RegExp {
                 idx--;
             }
             // System.out.print("b: "+b);
+            idx++;
             int idx2=0;
             while(idx2<idx){
                 if(str.charAt(idx2)=='a') return true;
@@ -132,6 +133,20 @@ public class RegExp {
         Y,N,N,N
         N,N,Y,Y
         N,Y,Y,Y
+        java RegExp ./testcase/tc0 abc b 3 > ./myAns/myAns0 &&
+        java RegExp ./testcase/tc1 abc b 3 > ./myAns/myAns1 &&
+        java RegExp ./testcase/tc2 abc b 3 > ./myAns/myAns2 &&
+        java RegExp ./testcase/tc3 abc b 3 > ./myAns/myAns3 &&
+        java RegExp ./testcase/tc4 abc b 3 > ./myAns/myAns4 &&
+        java RegExp ./testcase/tc5 abc b 3 > ./myAns/myAns5
+
+        diff ./testcase/ans0 ./myAns/myAns0 &&
+        diff ./testcase/ans1 ./myAns/myAns1 &&
+        diff ./testcase/ans2 ./myAns/myAns2 &&
+        diff ./testcase/ans3 ./myAns/myAns3 &&
+        diff ./testcase/ans4 ./myAns/myAns4 &&
+        diff ./testcase/ans5 ./myAns/myAns5 
+
         */
     }
 }
