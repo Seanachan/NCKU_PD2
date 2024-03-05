@@ -94,8 +94,7 @@ public class temp {
         int l1=str1.length(),l2=str2.length();
         try{
             BufferedReader reader = new BufferedReader(new FileReader(args[0]));
-            String line;
-            
+                // String line;
                 // String str= new String(line);
                 String str = "BIbabBbTaFb.";
                 str=str.toLowerCase();

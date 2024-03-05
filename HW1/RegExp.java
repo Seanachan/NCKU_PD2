@@ -39,7 +39,6 @@ public class RegExp {
         return false;
     }
     private static boolean matchPattern(String str,int l){
-        //a^m X b^2m
         /*
         String pattern=null;
         for(int m=1;m<(l/3)+1;m++){
@@ -61,7 +60,6 @@ public class RegExp {
                 }
                 idx--;
             }
-            // System.out.print("b: "+b);
             idx++;
             int idx2=0;
             while(idx2<idx){
@@ -70,7 +68,6 @@ public class RegExp {
             }
             ///////////////////
             //".*[aA]{%d}.*[bB]{%d}.*"
-            // if(str.matches(pattern)) return true;
         return false;
     }
     private static void printAns(char[] ans){
@@ -106,7 +103,6 @@ public class RegExp {
                 else ans[2]='N';
                 
                 ans[3]=(matchPattern(str,l))? 'Y':'N';
-                // System.out.print(line+" ");
                 printAns(ans);
             }
             reader.close();
@@ -140,7 +136,7 @@ public class RegExp {
         java RegExp ./testcase/tc4 abc b 3 > ./myAns/myAns4 &&
         java RegExp ./testcase/tc5 abc b 3 > ./myAns/myAns5
 
-        diff ./testcase/ans0 ./myAns/myAns0 &&
+        diff  ./testcase/ans0 ./myAns/myAns0 &&
         diff ./testcase/ans1 ./myAns/myAns1 &&
         diff ./testcase/ans2 ./myAns/myAns2 &&
         diff ./testcase/ans3 ./myAns/myAns3 &&
