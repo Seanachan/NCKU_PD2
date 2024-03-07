@@ -11,10 +11,10 @@ public class RegExp {
             if(a!=b){
                 if(!Character.isLetter(a) || !Character.isLetter(b)) return false;
                 
-                String converted_a=String.valueOf(a);
-                String converted_b=String.valueOf(b);
+                String convertedA=String.valueOf(a);
+                String convertedB=String.valueOf(b);
 
-                if(!converted_a.equals(converted_b)) return false;
+                if(!convertedA.equals(convertedB)) return false;
             }
         }
         return true;
@@ -96,6 +96,7 @@ public class RegExp {
                 int l = str.length();
 
                 ans[0]=(palindrome(str,l))? 'Y':'N';
+
                 if(l>=l1) ans[1]=(includeString(str, str1,l,l1))? 'Y':'N';
                 else ans[1]='N';
 
@@ -103,6 +104,7 @@ public class RegExp {
                 else ans[2]='N';
                 
                 ans[3]=(matchPattern(str,l))? 'Y':'N';
+                
                 printAns(ans);
             }
             reader.close();
