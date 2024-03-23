@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "RegExp",
+            "request": "launch",
+            "mainClass": "RegExp",
+            "projectName": "PD2_89e3565f",
+            "args":"./hw1/testcase/tc4 abc b 3"
+        },
+        {
+            "type": "java",
+            "name": "array",
+            "request": "launch",
+            "mainClass": "array",
+            "projectName": "PD2_89e3565f"
+        },
+        {
+            "type": "java",
+            "name": "learn_string",
+            "request": "launch",
+            "mainClass": "learn_string",
+            "projectName": "PD2_89e3565f"
+        },
+        {
+            "type": "java",
+            "name": "myList",
+            "request": "launch",
+            "mainClass": "myList",
+            "projectName": "PD2_89e3565f"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "run.Test",
+            "projectName": "PD2_89e3565f"
+        },
+        {
+            "type": "java",
+            "name": "something",
+            "request": "launch",
+            "mainClass": "something",
+            "projectName": "PD2_89e3565f"
+        },
+        {
+            "type": "java",
+            "name": "temp",
+            "request": "launch",
+            "mainClass": "temp",
+            "projectName": "PD2_89e3565f"
+        },
+        
+    ]
+}
