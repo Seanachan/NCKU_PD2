@@ -12,7 +12,7 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "args": "tc1"
+            "args": "tc6"
         },
         {
             "type": "java",

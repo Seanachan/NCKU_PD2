@@ -159,14 +159,26 @@ class Parser {
 
                 }else{
                     //normal function, return its designated type
-                    String[] typeAndName=new String[3];
+                    String[] typeAndName=new String[10];
                     typeAndName=str.split(" ");
-                    cur+=typeAndName[typeAndName.length-1];
+                    String[] types={"void","String","int","char","double","float","byte","long","short","boolean"};
+                    boolean hasType=false;
+                    String type="";
+                    for(int i=0;i<10;i++){
+                        if(typeAndName[typeAndName.length-1].contains(types[i])) {
+                            hasType=true;
+                            break;
+                        }
+                    }
+                    if(hasType) {cur+=typeAndName[typeAndName.length-1];type=typeAndName[typeAndName.length-1];}
+                    else {cur+="void ";cur+=typeAndName[typeAndName.length-1];type="void";}
+                    
                     for(int i=0;i<typeAndName.length-1;i++) {
                         cur+=" "+typeAndName[i];
                     }
+                    
                     cur+=" {";
-                    switch (typeAndName[typeAndName.length-1]) {
+                    switch (type) {
                         case "boolean":
                             cur+="return false;}";
                             break;
