@@ -1,4 +1,8 @@
 classDiagram
+class Seanachan
+Seanachan : +int[] hobbies                  
+
+Seanachan : +test(String testData, double db, boolean b)         
 class Person
 class Student {
     +int studentID
@@ -24,5 +28,10 @@ class Seanachan {
     +String school
     -double height
 }
-Seanachan : +int[] hobbies
-Seanachan : +test() 
+class Seanachan {
+    +String a
+    +String str
+    -byte byt
+}
+       Seanachan : -long[] longArr
+       Seanachan : +func(int a, int b) 
