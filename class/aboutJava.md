@@ -83,8 +83,110 @@ public class Main {
 
 ## this的用法
 
-
 ## Interface
 
+* 將方法聲明和implementation分開
+* 無需改變現有的類別，可以更改或增加類別的行為
+
+```java
+// 定義一個 Flyable Interface
+interface Flyable {
+    // Interface中的抽象方法 fly
+    void fly();
+}
+
+// 定義一個 Bird 類別
+class Bird {
+    // Bird的行為
+    void eat() {
+        System.out.println("Bird is eating");
+    }
+}
+
+// Penguin類別繼承Bird類別，並實現Flyable接口
+class Penguin extends Bird implements Flyable {
+    // 實現 fly 方法
+    public void fly() {
+        System.out.println("Penguin can fly");
+    }
+}
+
+public class TestInterface {
+    public static void main(String[] args) {
+        // 創建一隻Penguin
+        Penguin penguin = new Penguin();
+        penguin.eat();  // 輸出: Bird is eating
+        penguin.fly();  // 輸出: Penguin can fly
+    }
+}
+```
+
+### 多重繼承
+
+一個類別可以實現多個Interface，類似於多重繼承。
+
+```java
+// 定義一個 Runnable Interface
+interface Runnable {
+    // Interface中的抽象方法 run
+    void run();
+}
+// 定義一個 Swimmable Interface
+interface Swimmable {
+    // Interface中的抽象方法 swim
+    void swim();
+}
+// 定義一個 Robot 類別，同時實現 Runnable 和 Swimmable 兩個 Interface
+class Robot implements Runnable, Swimmable {
+    // 實現 run 方法
+    public void run() {
+        System.out.println("Robot is running");
+    }
+
+    // 實現 swim 方法
+    public void swim() {
+        System.out.println("Robot is swimming");
+    }
+}
+
+public class TestInterface {
+    public static void main(String[] args) {
+        // 創建一個 Robot
+        Robot myRobot = new Robot();
+        myRobot.run();  // 輸出: Robot is running
+        myRobot.swim();  // 輸出: Robot is swimming
+    }
+}
+```
+
+> What if it implements 2 Interfaces with the same-named methods?
+>
+> --> if the return type is the same, then it doesn't matter. But if it's different, CompileError happens.
 
 ## Abstract Class
+
+抽象類別（Abstract Class）是一種不能**直接實例化**（不可透過**new**來生成物件）的特殊類別。我們可以通過繼承抽象類別並實現其抽象方法來創建新的類別。抽象類別通常被用來作為所有具有共同特性的類別的基礎。是一種介於Interface（不能提供任何實作內容）與class之間的物件機制。 
+
+```java
+// 定義一個抽象類別 Animal
+abstract class Animal {
+    // 抽象方法 sound
+    abstract void sound();
+}
+
+// Dog 類別繼承 Animal 抽象類別
+class Dog extends Animal {
+    // 實現 sound 方法
+    public void sound() {
+        System.out.println("Dog says: Woof Woof!");
+    }
+}
+
+public class TestAbstractClass {
+    public static void main(String[] args) {
+        // 創建一個 Dog
+        Dog myDog = new Dog();
+        myDog.sound();  // 輸出: Dog says: Woof Woof!
+    }
+}
+```

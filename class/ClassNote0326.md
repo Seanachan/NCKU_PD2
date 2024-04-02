@@ -2,7 +2,27 @@
 
 ## Static
 
+### Memory Allocation
+
+各個物件擁有的資料彼此獨立，佔用不同的記憶體空間。
+
+```java
+class Human{
+    static int total = 0;  // 紀錄總人數
+    Sring name;
+    int age;
+    int height;
+    Human(String str){
+        name=str;
+        total++;  // 每建立一個Human物件，即對總人數+1
+    }// end of constructor(String)
+}// end of class Human
+
+```
+
 ### static variable
+
+> 這個變數不是屬於**物件** 而是**類別**
 
 代表會多次使用的物件，當class被讀取的時候，static variable會被馬上分配再class area內
 
@@ -34,7 +54,6 @@ Static Method 屬於class，而不是object
 > * 用final修飾的方法無法被覆寫
 > * 方法名稱、回傳型態、參數個數必須相同
 > * 子類別方法開放權限不得小於父類別的方法(如果父是public, 子就不能是private)
-
 
 ## Method Overloading
 
@@ -77,7 +96,7 @@ public class TestCasting {
     public static void main(String[] args) {
         Animal myAnimal = new Dog(); // Upcasting, implicitly
         myAnimal.makeSound(); // Calls the overridden method in Dog
-    
+  
         // Downcasting, explicitly
         if (myAnimal instanceof Dog) {
             Dog myDog = (Dog) myAnimal;
@@ -97,11 +116,11 @@ public class TestCasting {
 }
 ```
 
-> instanceOf --> 用來檢查左邊的東西是不是**右邊東西的子類別**
+> instanceOf --> 用來檢查左邊是不是**右邊的子類別**
 
 ## UpCasting & DownCasting
 
-首先，你必須知道一件事，透過轉型，你實際上並沒有更改物件本身，而只是對其進行了不同的標記。
+透過轉型，你實際上並沒有更改物件本身，而只是對其進行了不同的標記。
 
 * 如果實作了一隻貓並將其UpCasting為動物，這個不會停止成為貓。它仍然是一隻貓，但是它被當作任何其他動物對待，並且它的**貓的屬性被隱藏**，直到再次將其向下轉型到貓為止。
 * 子類別一定可以轉型為母類別
