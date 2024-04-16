@@ -1,0 +1,3110 @@
+day: 4
+day: 4, wait for day 1 ...
+day: 6
+day: 6, wait for day 1 ...
+day: 6
+day: 6, wait for day 1 ...
+day: 7
+day: 7, wait for day 1 ...
+day: 8
+day: 8, wait for day 1 ...
+day: 9
+day: 9, wait for day 1 ...
+day: 10
+day: 10, wait for day 1 ...
+day: 11
+day: 11, wait for day 1 ...
+day: 12
+day: 12, wait for day 1 ...
+day: 14
+day: 14, wait for day 1 ...
+day: 14
+day: 14, wait for day 1 ...
+day: 15
+day: 15, wait for day 1 ...
+day: 16
+day: 16, wait for day 1 ...
+day: 17
+day: 17, wait for day 1 ...
+day: 18
+day: 18, wait for day 1 ...
+day: 19
+day: 19, wait for day 1 ...
+day: 20
+day: 20, wait for day 1 ...
+day: 21
+day: 21, wait for day 1 ...
+day: 22
+day: 22, wait for day 1 ...
+day: 23
+day: 23, wait for day 1 ...
+day: 24
+day: 24, wait for day 1 ...
+day: 25
+day: 25, wait for day 1 ...
+day: 26
+day: 26, wait for day 1 ...
+day: 28
+day: 28, wait for day 1 ...
+day: 29
+day: 29, wait for day 1 ...
+day: 29
+day: 29, wait for day 1 ...
+day: 30
+day: 30, wait for day 1 ...
+day: 2
+day: 2, wait for day 1 ...
+day: 3
+day: 3, wait for day 1 ...
+day: 4
+day: 4, wait for day 1 ...
+day: 5
+day: 5, wait for day 1 ...
+day: 6
+day: 6, wait for day 1 ...
+day: 6
+day: 6, wait for day 1 ...
+day: 7
+day: 7, wait for day 1 ...
+day: 9
+day: 9, wait for day 1 ...
+day: 10
+day: 10, wait for day 1 ...
+day: 11
+day: 11, wait for day 1 ...
+day: 12
+day: 12, wait for day 1 ...
+day: 12
+day: 12, wait for day 1 ...
+day: 13
+day: 13, wait for day 1 ...
+day: 14
+day: 14, wait for day 1 ...
+day: 16
+day: 16, wait for day 1 ...
+day: 17
+day: 17, wait for day 1 ...
+day: 17
+day: 17, wait for day 1 ...
+day: 18
+day: 18, wait for day 1 ...
+day: 19
+day: 19, wait for day 1 ...
+day: 20
+day: 20, wait for day 1 ...
+day: 21
+day: 21, wait for day 1 ...
+day: 22
+day: 22, wait for day 1 ...
+day: 23
+day: 23, wait for day 1 ...
+day: 24
+day: 24, wait for day 1 ...
+day: 25
+day: 25, wait for day 1 ...
+day: 26
+day: 26, wait for day 1 ...
+day: 27
+day: 27, wait for day 1 ...
+day: 28
+day: 28, wait for day 1 ...
+day: 29
+day: 29, wait for day 1 ...
+day: 30
+day: 30, wait for day 1 ...
+day: 1
+Successfully create data.csv
+day: 3
+day: 4
+day: 5
+day: 6
+day: 6
+day: 7
+day: 8
+day: 9
+day: 10
+day: 11
+day: 12
+day: 13
+day: 15
+day: 15
+day: 16
+day: 17
+day: 18
+day: 20
+day: 20
+day: 22
+day: 23
+day: 24
+day: 24
+day: 25
+day: 26
+day: 27
+day: 28
+day: 29
+day: 30
+day: 1
+has done looping
+day: 3
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 22
+has done looping
+day: 22
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 5
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 30
+has done looping
+day: 30
+has done looping
+day: 2
+has done looping
+day: 3
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 7
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+has done looping
+has done looping
+has done looping
+has done looping
+day: 1
+day: 1
+day: 15
+has done looping
+day: 15
+has done looping
+day: 1
+day: 2
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 4
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 19
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 14
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 23
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 26
+has done looping
+day: 26
+has done looping
+day: 28
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 10
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 19
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 27
+has done looping
+day: 15
+has done looping
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 27
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 10
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 27
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 11
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 30
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 5
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 7
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 8
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 18
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 1
+day: 2
+has done looping
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 13
+has done looping
+day: 15
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 18
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 8
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 24
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 7
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 18
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 2
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 7
+has done looping
+day: 9
+has done looping
+day: 9
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 26
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 20
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 30
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 12
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 18
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 1
+day: 2
+has done looping
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+has done looping
+has done looping
+day: 12
+has done looping
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+has done looping
+has done looping
+has done looping
+day: 13
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 26
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 13
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 30
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 2
+has done looping
+day: 3
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 22
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 3
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 14
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 24
+has done looping
+day: 7
+has done looping
+day: 30
+has done looping
+day: 1
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 17
+has done looping
+has done looping
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 14
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 27
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 4
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 23
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 26
+has done looping
+day: 26
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 2
+has done looping
+day: 2
+has done looping
+day: 4
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 30
+has done looping
+day: 1
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 1
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 11
+has done looping
+day: 11
+has done looping
+day: 13
+has done looping
+day: 13
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 3
+has done looping
+has done looping
+day: 27
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 28
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 6
+has done looping
+day: 6
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 14
+has done looping
+day: 23
+has done looping
+day: 28
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 7
+has done looping
+day: 17
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 9
+has done looping
+day: 11
+has done looping
+day: 11
+has done looping
+day: 20
+has done looping
+day: 5
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 27
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 10
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 19
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 1
+day: 1
+day: 3
+has done looping
+day: 3
+has done looping
+day: 7
+has done looping
+day: 7
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 21
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 25
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 8
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 15
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 13
+has done looping
+day: 23
+has done looping
+day: 2
+has done looping
+day: 3
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 13
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 28
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 1
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 7
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 4
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 12
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 18
+has done looping
+day: 18
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 7
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 24
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 10
+has done looping
+day: 10
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 20
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 27
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 30
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 7
+has done looping
+day: 9
+has done looping
+day: 9
+has done looping
+day: 11
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 14
+has done looping
+day: 14
+has done looping
+day: 16
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 24
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 28
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 1
+day: 3
+has done looping
+day: 3
+has done looping
+day: 4
+has done looping
+day: 5
+has done looping
+day: 6
+has done looping
+day: 8
+has done looping
+day: 8
+has done looping
+day: 9
+has done looping
+day: 10
+has done looping
+day: 11
+has done looping
+day: 12
+has done looping
+day: 13
+has done looping
+day: 14
+has done looping
+day: 15
+has done looping
+day: 16
+has done looping
+day: 17
+has done looping
+day: 18
+has done looping
+day: 19
+has done looping
+day: 20
+has done looping
+day: 21
+has done looping
+day: 22
+has done looping
+day: 23
+has done looping
+day: 25
+has done looping
+day: 26
+has done looping
+day: 26
+has done looping
+day: 27
+has done looping
+day: 29
+has done looping
+day: 30
+has done looping
+day: 30
+has done looping
+day: 1
+day: 2
+has done looping
+day: 4
+has done looping

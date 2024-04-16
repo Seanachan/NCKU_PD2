@@ -2,7 +2,9 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
 import java.io.*;
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Scanner;
 class MyMath{
     public static String round(Double num){
         String ans=String.format("%.2f",num);
