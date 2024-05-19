@@ -261,7 +261,7 @@ class HtmlParser{
             }
             File bufFile = new File(BUFFER_FILE);
             File recordFile=new File("record.txt");
-            if(!bufFile.exists()){
+            // if(!bufFile.exists()){
                 if(day!=1){
                     System.out.printf("day: %d, wait for day 1 ...\n",day);
                     return;
@@ -280,20 +280,21 @@ class HtmlParser{
                 // System.out.println(stockName.text());
                 //write into data.csv
                 Writer.writer(stockInfo, BUFFER_FILE,false);
-            }else{
-                if(day==1){
-                    if(recordFile.exists()) return;
-                    try{
-                        boolean success = recordFile.createNewFile();
-                        if(success) {
-                            System.out.println("has done looping");
-                        }
-                    }catch(IOException exception){
-                        exception.printStackTrace();
-                    }
-                    return;
-                }
-            }
+            // }
+            // else{
+            //     if(day==1){
+            //         if(recordFile.exists()) return;
+            //         try{
+            //             boolean success = recordFile.createNewFile();
+            //             if(success) {
+            //                 System.out.println("has done looping");
+            //             }
+            //         }catch(IOException exception){
+            //             exception.printStackTrace();
+            //         }
+            //         return;
+            //     }
+            // }
             if(recordFile.exists()){
                 System.out.println("has done looping");
                 return;
