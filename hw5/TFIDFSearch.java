@@ -19,7 +19,6 @@ import java.util.TreeMap;
 
 
 public class TFIDFSearch {
-    static long runTime = 0;
     static ArrayList<HashMap<String,Double>> TFIDFMap ;
     static Indexer deserialize(String serializedFileName){
         Indexer deserializedIndexer=null;
@@ -27,10 +26,8 @@ public class TFIDFSearch {
         try {
             FileInputStream fis = new FileInputStream(serializedFileName);
             ObjectInputStream ois = new ObjectInputStream(fis);
-            final long startTime = System.currentTimeMillis();
-            deserializedIndexer = (Indexer) ois.readObject();
-            final long endTime = System.currentTimeMillis();
-            System.out.println("Deserialize time(sec) : "+(double) (endTime-startTime)/1000);
+
+            deserializedIndexer = (Indexer) ois.readObject();//deserialize
             ois.close();
             fis.close();
             return deserializedIndexer;
@@ -54,13 +51,16 @@ public class TFIDFSearch {
     }
 
     static PriorityQueue<Map.Entry<Integer,Double>> runSingleQuery(String queryWord, int docsSize, int[] sizeOfEachElement){
-        TreeMap<Integer,Double> mp = new TreeMap<>(Collections.reverseOrder());
+        // deal with queries with no AND/OR
+        TreeMap<Integer,Double> mp = new TreeMap<>(Collections.reverseOrder());//mp<docNum, tf_idf value>
+        //PriorityQueue is originally sort by key with ascending order, modify it to sort by value, with descending order
+        //if the value is equal, sort by key with ascending order
         PriorityQueue<Map.Entry<Integer, Double>> pq = new PriorityQueue<>(
                 Comparator.comparing(Map.Entry<Integer, Double>::getValue).reversed().thenComparing(Map.Entry<Integer, Double>::getKey));
                 
         for(int i=0;i<docsSize;i++){
             if(TFIDFMap.get(i).containsKey(queryWord)){
-                double resultDouble = TFIDFMap.get(i).get(queryWord);
+                double resultDouble = TFIDFMap.get(i).get(queryWord);//add the TF_IDF val to map
                 mp.put(i,resultDouble);
             }
         }
@@ -68,7 +68,6 @@ public class TFIDFSearch {
         return pq;
     }
     static PriorityQueue<Map.Entry<Integer,Double>> run(String concatWord, String[] testcase,int docsSize,int[] sizeOfEachElement){
-        final long startTime = System.currentTimeMillis();
             List<Integer> buffer=null;
             TreeMap<Integer,Double> mp = new TreeMap<>();
             PriorityQueue<Map.Entry<Integer, Double>> pq = new PriorityQueue<>(
@@ -81,18 +80,14 @@ public class TFIDFSearch {
                 testcase[i]=testcase[i].toLowerCase().trim();
                 buffer=new ArrayList<>();
                 for(int j=0;j<docsSize;j++){ 
-                    if(TFIDFMap.get(j).containsKey(testcase[i])){
-                        //append the doc's num 
-                        buffer.add(j);
-                    }
+                    if(TFIDFMap.get(j).containsKey(testcase[i]))
+                        buffer.add(j); //append the doc's num 
                 }
-
                 if(intersect!=null)
                     //find intersection
                     intersect.retainAll(new HashSet<>(buffer));
-                else{
+                else
                     intersect=new HashSet<>(buffer);
-                }   
             }
             
             for(int docNum:intersect){
@@ -107,8 +102,6 @@ public class TFIDFSearch {
             return pq;
         }else{
             Set<Integer> union = null;
-            // HashMap<String,Integer> repStringMap = new HashMap<>();
-            
             for(int i=0;i<testcase.length;i++){
                 testcase[i]=testcase[i].toLowerCase().trim();
                 
@@ -146,7 +139,6 @@ public class TFIDFSearch {
         inputFileSize = sizeOfEachElement.length;
         TFIDFMap =idx.TFIDFMap;
         ///////////////////////////////////////////////////////////////////////////////
-        ///////////////////////////////////////////////////////////////////////////////
 
         try { 
             tcReader = new BufferedReader(new FileReader(TC_PATH));
@@ -155,8 +147,7 @@ public class TFIDFSearch {
             try (FileWriter writer = new FileWriter("output.txt")) {  
                 while ((line = tcReader.readLine()) != null) {
                     StringJoiner output = new StringJoiner(" ");
-                    // TreeMap<Integer, Double> map =null;
-                    TreeMap<Double,Integer> oneWordMap = null;
+
                     concatWord=null;
                     if(line.indexOf("AND")>=0) concatWord="AND";
                     else if(line.indexOf("OR")>=0) concatWord="OR";
@@ -173,15 +164,15 @@ public class TFIDFSearch {
                                 writtenDataNum++;
                             }
                         }
-                        //fill outpdut so that it can print -1 if element is insufficient
+                        
                         while(writtenDataNum++ < numOfOutput){
+                            //fill output so that it can print -1 if element is insufficient
                             output.add("-1");
                         }
 
                     }else{
 
                         tesetcase=line.split(concatWord);
-                        //save the map as list and sort it by value
                         PriorityQueue<Map.Entry<Integer, Double>> pq =null;
                         pq=run(concatWord, tesetcase,inputFileSize,sizeOfEachElement);
                         
@@ -207,7 +198,6 @@ public class TFIDFSearch {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Run time: "+runTime);
         }
         
 }
