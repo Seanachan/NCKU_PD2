@@ -1,0 +1,279 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.StringJoiner;
+import java.util.TreeMap;
+
+class Calculator{
+    static long calculateTime=0;
+    static Trie bigTrie = new Trie();
+    public static double tf(int docSize, String term, Trie[] TrieList,int docNum) {
+        int numOfTerm=0;
+        numOfTerm=TrieList[docNum].getCount(term);
+        return  (double) numOfTerm /  docSize;
+    }
+    public static double idf(int docsSize, String term, Trie[] TrieList) {
+        int numOfDocHasTerm=0;
+        if(bigTrie.getCount(term)!=0) numOfDocHasTerm=bigTrie.getCount(term);
+
+        else {
+            for(Trie trie:TrieList){
+                if(trie.search(term))
+                    numOfDocHasTerm++;
+            }
+            bigTrie.insert(term,numOfDocHasTerm);
+        }
+
+        if(numOfDocHasTerm==0) return 0;
+        return Math.log((double) docsSize / numOfDocHasTerm);
+    }
+    
+    public static double tfIdfCalculate(int docsSize, int docSize, String term,Trie[] TrieList,int docNum) {
+        final long start = System.currentTimeMillis();
+        if(!TrieList[docNum].TFIDFMap.containsKey(term)){
+            double d = (double) tf(docSize, term,TrieList,docNum) * idf(docsSize, term,TrieList);
+            TrieList[docNum].TFIDFMap.put(term,d);
+        }
+        final long end = System.currentTimeMillis();
+        calculateTime+=(end-start);
+
+        return TrieList[docNum].TFIDFMap.get(term);
+        
+        // return (double) tf(docSize, term,TrieList,docNum) * idf(docsSize, term,TrieList);
+    }
+}
+public class TFIDFSearch {
+    static HashMap<String,Double> visitedMap = new HashMap<>();
+
+    static List<List<String>> dataToList(BufferedReader br){
+        int lineCount=0;//count what line it's reading now
+        List<List<String>> inputFileList=new ArrayList<>();
+        List<String> temp=new ArrayList<>();
+        String line=null;
+        try { 
+            while ((line = br.readLine()) != null) {
+                line = line.replaceAll("[^a-zA-Z]+", " ").trim().toLowerCase();//replacing iillegal characters and remove the starting and ending spaces 
+                if (!line.isEmpty()) {
+                    String[] words = line.split("\\s+");
+                    temp.addAll(Arrays.asList(words));
+                    lineCount++;
+                    if (lineCount % 5 == 0) {
+                        inputFileList.add(new ArrayList<>(temp));
+                        temp.clear();
+                    }
+                }
+            }
+            if (!temp.isEmpty()) {
+                inputFileList.add(temp);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return inputFileList;
+    }
+    static TreeMap<Double,Integer> runSingleQuery(String queryWord,Trie[] TrieList, int docsSize, int[] sizeOfEachElement){
+        TreeMap<Double,Integer> mp = new TreeMap<>(Collections.reverseOrder());
+
+        for(int i=0;i<TrieList.length;i++){
+            if(TrieList[i].search(queryWord)){
+                Double resultDouble = Calculator.tfIdfCalculate(docsSize, sizeOfEachElement[i], queryWord, TrieList, i);
+                mp.put(resultDouble, i);
+            }
+        }
+        return mp;
+    }
+    static TreeMap<Integer,Double> run(String concatWord, String[] testcase,Trie[] TrieList,int docsSize,int[] sizeOfEachElement){
+            List<Integer> buffer=null;
+            TreeMap<Integer,Double> mp = new TreeMap<>();
+
+        if(concatWord.equals("AND")){
+            List<Integer> intersect=null;
+            HashMap<String,Integer> repStringMap = new HashMap<>();
+            for(int i=0;i<testcase.length;i++){
+                testcase[i]=testcase[i].toLowerCase().trim();
+                //find intersection
+                buffer=new ArrayList<>();
+                for(int j=0;j<TrieList.length;j++){ 
+                    if(TrieList[j].search(testcase[i])){
+                        //append the doc's num 
+                        buffer.add(j);
+                    }
+                }
+                if(intersect!=null)
+                    intersect.retainAll(buffer);
+                else{
+                    intersect=new ArrayList<>(buffer);
+                }   
+            }
+            for(String tc:testcase){
+                
+                for(int docNum:intersect){
+                    double resultDouble=0;
+                    if(visitedMap.containsKey(tc)){
+                        resultDouble=visitedMap.get(tc);
+                    }
+                    else resultDouble=Calculator.tfIdfCalculate(docsSize, sizeOfEachElement[docNum], tc, TrieList, docNum);
+                    if(mp.containsKey(docNum)){
+                        // key exists, calculate the tf-idf and sum them up
+                        mp.put(docNum,mp.get(docNum)+resultDouble);
+                    }
+                    else mp.put(docNum,resultDouble);
+                }
+            }
+            return mp;
+        }else{
+            Set<Integer> unionSet = new HashSet<>();
+            for(int i=0;i<testcase.length;i++){
+                testcase[i]=testcase[i].toLowerCase().trim();
+                //find intersection
+                buffer=new ArrayList<>();
+                for(int j=0;j<TrieList.length;j++){ 
+                    if(TrieList[j].search(testcase[i])){
+                        //append the doc's num 
+                        unionSet.add(j);
+                    }
+                }
+            }
+            for(String tc:testcase){
+                for(int docNum:unionSet){
+                    double resultDouble=Calculator.tfIdfCalculate(docsSize, sizeOfEachElement[docNum], tc, TrieList, docNum);
+                    if(mp.containsKey(docNum)){
+                        // key exists, calculate the tf-idf and sum them up
+                        mp.put(docNum,mp.get(docNum)+resultDouble);
+                    }
+                    else mp.put(docNum,resultDouble);
+                }
+            }
+            return mp;
+        }
+    }
+    
+    public static void main(String[] args) {
+        long start1 = System.currentTimeMillis();
+        long sortTime=0;
+        String SERIALIZED_FILE_NAME = args[0]+".ser",TC_PATH = args[1],line=null,concatWord =null, queryWord=null;
+        String[] tesetcase=null;
+        BufferedReader tcReader = null;
+        int numOfOutput=0;
+        List<List<String>> inputFileList=new ArrayList<>();
+        BufferedReader dataReader = null;
+        int inputFileSize=0;
+        int[] sizeOfIputFileList=null;
+        try{
+            dataReader = new BufferedReader(new FileReader("./data/corpus0.txt"));
+            inputFileList=dataToList(dataReader);
+            dataReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        inputFileSize=inputFileList.size();
+        sizeOfIputFileList=new int[inputFileSize];//store how many data in each article
+
+        Trie[] TrieList=new Trie[inputFileSize];
+        
+        for(int i=0;i<inputFileSize;i++){
+            TrieList[i]=new Trie();
+            for(String str:inputFileList.get(i)){
+                TrieList[i].insert(str);
+            }
+            sizeOfIputFileList[i]=inputFileList.get(i).size();
+        }
+        long end1 = System.currentTimeMillis();
+        System.out.println("plant tree time: "+(end1-start1));
+        // Indexer idx = new Indexer(inputFileSize);
+        // idx.TrieList=TrieList;
+        // idx.sizeOfEachElement=sizeOfIputFileList;
+        ///////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////
+
+        try { 
+            tcReader = new BufferedReader(new FileReader(TC_PATH));
+            line=tcReader.readLine();
+            numOfOutput=Integer.parseInt(line);
+            // System.out.println("numOfOutput: "+numOfOutput);
+            //write to output.txt
+            try (FileWriter writer = new FileWriter("output.txt")) {  
+                while ((line = tcReader.readLine()) != null) {
+                    // List<Integer> output = new ArrayList<>();
+                    StringJoiner output = new StringJoiner(" ");
+                    TreeMap<Integer, Double> map =null;
+                    TreeMap<Double,Integer> oneWordMap = null;
+                    concatWord=null;
+                    if(line.indexOf("AND")>=0) concatWord="AND";
+                    else if(line.indexOf("OR")>=0) concatWord="OR";
+
+                    if(concatWord==null){
+                        queryWord=line.trim();
+                        oneWordMap=runSingleQuery(queryWord, TrieList, inputFileSize, sizeOfIputFileList);
+                        // TreeMap<Double,Integer> reversedMap = new TreeMap<>()
+                        int writtenDataNum=0;
+                        for(Map.Entry<Double,Integer> entry : oneWordMap.entrySet()){
+                            if(++writtenDataNum > numOfOutput) break;
+                            output.add(entry.getValue().toString());
+                            // System.out.print(entry.getKey() + ": "+entry.getValue()+"\n"); 
+                        }
+                        while(writtenDataNum++ < numOfOutput){
+                            output.add("-1");
+
+                        }
+                    }else{
+
+                        tesetcase=line.split(concatWord);
+                        
+                        map = run(concatWord, tesetcase, TrieList,inputFileSize,sizeOfIputFileList);
+                        if(map==null) {System.out.println("map return null");return;}
+                        
+                        //save the map as list and sort it by value
+                        List<Map.Entry<Integer,Double>> list = new ArrayList<>(map.entrySet());
+                        final long start = System.currentTimeMillis();
+
+                        Collections.sort(list,new Comparator<Map.Entry<Integer,Double>>(){
+                            @Override
+                            public int compare(Map.Entry<Integer,Double> map1, Map.Entry<Integer,Double> map2){
+                                Double sum1 = map1.getValue();
+                                Double sum2 = map2.getValue();
+                                return sum2.compareTo(sum1);
+                            }
+                        });
+                        final long end = System.currentTimeMillis();
+                        sortTime+=(end-start);
+                        
+                        // Traverse map and print elements 
+                        int writtenDataNum=0;
+                        for(Map.Entry<Integer,Double> entry : list){
+                            if(++writtenDataNum > numOfOutput) break;
+                            output.add(entry.getKey().toString());
+                            // System.out.print(entry.getKey() + ": "+entry.getValue()+"\n"); 
+                        }
+                        //fill output so that it can print -1 if element is insufficient
+                        while(writtenDataNum++ < numOfOutput){
+                            output.add("-1");
+                            // writtenDataNum++;
+                        }
+                    }
+                    StringJoiner joiner = new StringJoiner(" ");
+                    writer.write(output.toString()+"\n");
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            tcReader.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("sort time: "+sortTime);
+        System.out.println("TF_IDF time: "+Calculator.calculateTime);
+        }
+        
+}

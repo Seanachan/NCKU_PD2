@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "args": "corpus0 ./data/tc0.txt"
+        },
+        {
+            "type": "java",
+            "name": "BuildIndex",
+            "request": "launch",
+            "mainClass": "BuildIndex",
+            "projectName": "hw5_a19a0156",
+            "args": "./example.txt"
+        },
+        {
+            "type": "java",
+            "name": "TFIDFSearch",
+            "request": "launch",
+            "mainClass": "TFIDFSearch",
+            "projectName": "hw5_a19a0156",
+            "args": "corpus0 ./data/tc3.txt"
+        },
+        
+        {
+            "type": "java",
+            "name": "Temp",
+            "request": "launch",
+            "mainClass": "Temp",
+            "projectName": "hw5_a19a0156"
+        }
+    ]
+}

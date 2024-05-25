@@ -55,14 +55,14 @@ class TFIDFCalculator{
         return inputFileList;
     }
     public static void main(String[] args) {
-        String INPUT_FILE_NAME=args[0],TESTCASE_FILE_PATH=args[1];
+        // String INPUT_FILE_NAME=args[0];//,TESTCASE_FILE_PATH=args[1];
         List<List<String>> inputFileList=new ArrayList<>();
         BufferedReader dataReader = null;
         int inputFileSize=0;
         int[] sizeOfIputFileList=null;
         try{
             //read file and create bufferedReader
-            dataReader = new BufferedReader(new FileReader(INPUT_FILE_NAME));
+            dataReader = new BufferedReader(new FileReader("./data/corpus0.txt"));
         
             //convert texts in docs.txt to List<List<String>>
             inputFileList=dataToList(dataReader);
@@ -82,6 +82,19 @@ class TFIDFCalculator{
             }
             sizeOfIputFileList[i]=inputFileList.get(i).size();
         }
+        int n=9640;
+        double a=tfIdfCalculate(inputFileSize, sizeOfIputFileList[n], "like", TrieList, n);
+
+        System.out.printf("%.100f\n",a);
+        
+        n=4886;
+        double b=(double) tfIdfCalculate(inputFileSize, sizeOfIputFileList[4886], "like", TrieList, 4886);
+        System.out.printf("%.100f\n",b);
+
+        System.out.println(a>b);
+        System.out.println(a==b);
+        System.out.println(a<b);
+
         /* 
         String[] queryTerms=null,queryDocNum=null;
         try {

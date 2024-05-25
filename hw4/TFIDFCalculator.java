@@ -72,6 +72,7 @@ class TFIDFCalculator{
         }
 
         inputFileSize=inputFileList.size();
+        System.out.println(inputFileSize);
         sizeOfIputFileList=new int[inputFileSize];//store how many data in each article
 
         Trie[] TrieList=new Trie[inputFileSize];

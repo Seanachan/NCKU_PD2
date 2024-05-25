@@ -1,6 +1,7 @@
 import java.io.*;
+import java.util.HashMap;
+import java.util.*;
 class Node implements Serializable{
-    private static final long serialVersionUID = 1L;
     final Node[] children;
     boolean isEnd;
     int count;
@@ -10,8 +11,7 @@ class Node implements Serializable{
         this.count=0;
     }
 }
-class Trie implements Serializable {
-    private static final long serialVersionUID = 1L;
+class Trie implements Serializable{
     final Node root=new Node();
     public void insert(String word) {
         Node node = root;
@@ -37,7 +37,6 @@ class Trie implements Serializable {
     public void insert(String word,int count) {
         Node node = root;
         if(search(word)){
-    
             return;
         }
         for (char c : word.toCharArray()) {
@@ -72,13 +71,33 @@ class Trie implements Serializable {
 }
 public class Indexer implements Serializable {
     private static final long serialVersionUID = 1L;
-	Trie[] TrieList;
-    Trie bigTrie;// mutable value
+	transient Trie[] TrieList;
     int[] sizeOfEachElement;
-
-    Indexer(int trieSize){
-        this.TrieList = new Trie[trieSize];
-        this.bigTrie = new Trie();
-        this.sizeOfEachElement = new int[trieSize];
-    }
+    ArrayList<HashMap<String,Double>> TFIDFMap ;
 }
+/* 
+    // BufferedReader dataReader = null;    
+    // List<List<String>> inputFileList=new ArrayList<>();
+        try{
+            dataReader = new BufferedReader(new FileReader("./data/corpus0.txt"));
+            inputFileList=dataToList(dataReader);
+            dataReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        inputFileSize=inputFileList.size();
+        sizeOfEachElement=new int[inputFileSize];//store how many data in each article
+
+        Trie[] TrieList=new Trie[inputFileSize];
+        
+        for(int i=0;i<inputFileSize;i++){
+            TrieList[i]=new Trie();
+            for(String str:inputFileList.get(i)){
+                TrieList[i].insert(str);
+            }
+            sizeOfEachElement[i]=inputFileList.get(i).size();
+        }
+        long end1 = System.currentTimeMillis();
+        System.out.println("plant tree time: "+(end1-start1));
+        */

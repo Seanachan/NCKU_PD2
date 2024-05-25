@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Node{
     Node[] children;
     boolean isEnd;
@@ -10,6 +12,10 @@ class Node{
 }
 public class Trie{
     Node root=new Node();
+    HashMap<String,Double> TFIDFMap;
+    Trie(){
+        this.TFIDFMap=new HashMap<>();
+    }
     public void insert(String word) {
         Node node = root;
         if(search(word)){
