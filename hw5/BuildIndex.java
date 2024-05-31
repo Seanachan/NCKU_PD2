@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+
 class Calculator{
     static Trie bigTrie=new Trie();
     static int inputFileSize;

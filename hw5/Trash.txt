@@ -1,0 +1,233 @@
+/**
+ * TFIDFSearch
+ */
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.HashSet;
+import java.util.List;
+
+class Calculator{
+    public static double tf(int docSize, String term, Trie[] TrieList,int docNum, Trie bigTrie) {
+        int numOfTerm=0;
+        numOfTerm=TrieList[docNum].getCount(term);
+        return  (double) numOfTerm /  docSize;
+    }
+    public static double idf(int docsSize, String term, Trie[] TrieList, Trie bigTrie) {
+        int numOfDocHasTerm=0;
+        if(bigTrie.getCount(term)!=0) numOfDocHasTerm=bigTrie.getCount(term);
+
+        else {
+            for(int i=0;i<TrieList.length;i++){
+                if(TrieList[i].search(term))
+                    numOfDocHasTerm++;
+            }
+            bigTrie.insert(term,numOfDocHasTerm);
+        }
+        return Math.log((double) docsSize / numOfDocHasTerm);
+    }
+    
+    public static double tfIdfCalculate(int docsSize, int docSize, String term,Trie[] TrieList,int docNum, Trie bigTrie) {
+        return (double) tf(docSize, term,TrieList,docNum,bigTrie) * idf(docsSize, term,TrieList, bigTrie);
+    }
+}
+public class Trash {
+    static Indexer deserialize(String serializedFileName){
+        Indexer deserializedIndexer=null;
+        // Deserialization
+        try {
+            FileInputStream fis = new FileInputStream(serializedFileName);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            final long startTime = System.currentTimeMillis();
+            deserializedIndexer = (Indexer) ois.readObject();
+            final long endTime = System.currentTimeMillis();
+            System.out.println("Deserialize time(sec) : "+(double) (endTime-startTime)/1000);
+            ois.close();
+            fis.close();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+            return null;
+        } catch (ClassNotFoundException c) {
+            System.out.println("Class not found");
+            c.printStackTrace();
+            return null;
+        }
+        return deserializedIndexer;
+    }
+    static void write(String output){
+        try (FileWriter fw = new FileWriter("output.txt")) {
+            fw.write(output.toString().trim());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Successfully write to output.txt");
+    }
+
+    static List<List<String>> dataToList(BufferedReader br){
+        int lineCount=0;//count what line it's reading now
+        List<List<String>> inputFileList=new ArrayList<>();
+        List<String> temp=new ArrayList<>();
+        String line=null;
+        try { 
+            while ((line = br.readLine()) != null) {
+                line = line.toLowerCase().replaceAll("[^a-z\\s]", " ").trim();//replacing iillegal characters and remove the starting and ending spaces 
+                if (!line.isEmpty()) {
+                    String[] words = line.split("\\s+");
+                    temp.addAll(Arrays.asList(words));
+                    lineCount++;
+                    if (lineCount % 5 == 0) {
+                        inputFileList.add(new ArrayList<>(temp));
+                        temp.clear();
+                    }
+                }
+            }
+            if (!temp.isEmpty()) {
+                inputFileList.add(temp);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return inputFileList;
+    }
+    static Trie bigTrie = new Trie();
+    public static void main(String[] args) {
+        String CORPUS_FILE_PATH="./data/corpus0.txt",OUTPUT_FILE_NAME;
+        OUTPUT_FILE_NAME = "output.txt";
+        System.out.println(OUTPUT_FILE_NAME);
+        List<List<String>> inputFileList=new ArrayList<>();
+        BufferedReader fr = null;
+        int inputFileSize=0;
+        int[] sizeOfIputFileList=null;
+        
+        try{
+            //read file and create bufferedReader
+            fr = new BufferedReader(new FileReader(CORPUS_FILE_PATH));
+        
+            //convert texts in corpus.txt to List<List<String>>
+            inputFileList=dataToList(fr);
+            fr.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        inputFileSize=inputFileList.size();
+        sizeOfIputFileList=new int[inputFileSize];//store how many data in each article
+
+        Trie[] TrieList=new Trie[inputFileSize];
+        for(int i=0;i<inputFileSize;i++){
+            TrieList[i]=new Trie();
+            for(String str:inputFileList.get(i)){
+                TrieList[i].insert(str);
+            }
+            sizeOfIputFileList[i]=inputFileList.get(i).size();
+        }
+
+        //initialize object of Indexer
+        Indexer idx = new Indexer(inputFileSize);
+
+
+
+        String SERIALIZED_FILE_NAME = args[0]+".ser",TC_PATH = args[1],line=null,concatWord =null, queryWord=null;
+        String[] tesetcase=null;
+        BufferedReader tcReader = null;
+        int numOfOutput=0;
+        // System.out.println("Start Deserializing...");
+        // Indexer idx=deserialize(SERIALIZED_FILE_NAME);
+        // Trie[] TrieList = idx.TrieList;
+        // Trie bigTrie=idx.bigTrie;
+        // int[] sizeOfEachElement = idx.sizeOfEachElement;
+        // int trieSize=TrieList.length;
+        
+        
+        try { 
+            tcReader = new BufferedReader(new FileReader(TC_PATH));
+            line=tcReader.readLine();
+            numOfOutput=Integer.parseInt(line);
+            System.out.println(numOfOutput);
+            while ((line = tcReader.readLine()) != null) {
+                // if(concatWord==null){
+                    if(line.indexOf("AND")>=0) concatWord="AND";
+                    else if(line.indexOf("OR")>=0) concatWord="OR";
+                    
+                // }
+                if(concatWord==null){
+                    //query words
+                    queryWord=line;
+                    return;
+                }
+                if(concatWord.equals("AND")) {
+                    System.out.println("here");
+                    ArrayList<Integer> intersect = null;
+                    Map<Integer,Double> mp = new HashMap<>();
+                    ArrayList<String> tcList = null;
+                    ArrayList<Integer> intBuffer;
+                    ArrayList<String> tcBuffer;
+                    //split words from line
+                    tesetcase = line.split("AND");
+                    for(int i=0;i<tesetcase.length;i++) {
+                        tesetcase[i]=tesetcase[i].toLowerCase().trim();
+                        intBuffer=new ArrayList<>();
+                        // tcBuffer=new ArrayList<>();
+                        for(int j=0;j<TrieList.length;j++){
+                            //loop the trie to see if term found
+                            if(TrieList[j].search(tesetcase[i])){
+                                intBuffer.add(i);
+                                // tcBuffer.add(str);
+                            }
+                        }
+                        if(intersect!=null){
+                            intersect.retainAll(intBuffer);
+                            // tcList.retainAll(tcBuffer);
+                        }else{
+                            intersect = new ArrayList<>(intBuffer);
+                            // tcList = new ArrayList<>(tcBuffer);
+                        }
+                    }
+                    for(int i=0;i<intersect.size();i++){
+                        // System.out.println(String.format(queryWord, args));
+                        
+                        // double d = Calculator.tfIdfCalculate(TrieList.length,sizeOfIputFileList[i],tcList.get(i),TrieList,i,bigTrie);
+                        // System.out.println("here: "+d);
+                        System.out.println(tesetcase[i]);
+                        mp.put(i,Calculator.tfIdfCalculate(TrieList.length,sizeOfIputFileList[i],tesetcase[i],TrieList,i,bigTrie));
+                    }
+                    for (Map.Entry<Integer, Double> entry : mp.entrySet()) {
+                        System.out.println(entry.getKey() + "/" + entry.getValue());
+                    }
+                    mp.entrySet()
+                    .stream().sorted(Map.Entry.comparingByValue())
+                    .forEach(System.out::println);
+                    
+                    // intersection of terms which are to be found --> establish HashSet and retainAll()
+
+
+                }
+                else {
+                    List<Integer> union = new ArrayList<>();
+                    //split words from line
+                    tesetcase = line.split("OR");
+                    for(String str:tesetcase) str=str.toLowerCase();
+
+                    // TODO: union of terms which are to be found --> also HashMap
+
+                }
+
+                // TODO: calculate the tf-idfs and sum them up
+
+                // TODO : store the sum results to Lists
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        //TODO: write answer to output.txt
+        // write();
+    }
+    
+    
+}

@@ -1,7 +1,8 @@
-import java.io.*;
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.*;
-class Node implements Serializable{
+
+class Node {
     final Node[] children;
     boolean isEnd;
     int count;
@@ -11,7 +12,7 @@ class Node implements Serializable{
         this.count=0;
     }
 }
-class Trie implements Serializable{
+class Trie {
     final Node root=new Node();
     public void insert(String word) {
         Node node = root;
@@ -71,7 +72,7 @@ class Trie implements Serializable{
 }
 public class Indexer implements Serializable {
     private static final long serialVersionUID = 1L;
-	transient Trie[] TrieList;
+	// transient Trie[] TrieList;
     int[] sizeOfEachElement;
     ArrayList<HashMap<String,Double>> TFIDFMap ;
 }
